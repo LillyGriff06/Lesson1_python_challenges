@@ -18,8 +18,13 @@ def powerCalculator():
 def sumTwoNumbers():
     num1 = int(input("Input a number:  "))
     num2 = int(input("Input another number:  "))
-    addition = num1 + num2
-    print("The sum of the two numbers", num1, "and", num2, "is", addition)
+    if num1%7==0 or num2%7==0:
+        print("divide")
+    elif num1%11==0 or num2%11==0:
+        print("multiply")
+    else:
+        addition = num1 + num2
+        print("The sum of the two numbers", num1, "and", num2, "is", addition)
 
 
 
